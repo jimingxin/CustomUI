@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#efeff4"
+    tools:context="com.exam.customui.CandidateActivity" >
+
+    <include
+        android:id="@+id/headerView"
+        layout="@layout/navigation" />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        
+        >
+         <com.exam.myview.CircleImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/back1"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/candidate_detail_avatar"/>
+         
+    <LinearLayout 
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/candidate_detail_username"
+            android:text="小明"
+            android:gravity="center_vertical"
+            
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/candidate_detail_age"
+            android:text="年龄：26"
+            android:gravity="center_vertical"
+            
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/candidate_detail_position"
+            android:text="职位：工程师"
+            android:gravity="center_vertical"
+            
+            />
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/candidate_detail_department"
+            android:text="部门：人事部"
+            android:gravity="center_vertical"
+            
+            />
+        
+    </LinearLayout>
+  
+	</LinearLayout>
+		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="基本情况:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+		<TextView 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingLeft="15dp"
+    		android:paddingRight="15dp"
+    		android:paddingBottom="10dp"
+    		android:background="#ffffff"
+    		android:id="@+id/candidate_detail_message"
+    		android:text="王大锤的扮演者罗洪明（白客），是万万没想到的猪脚，这是一个非常优秀的演员"/>
+	
+		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:text="参选信息:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+		<TextView 
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:paddingLeft="15dp"
+    		android:paddingRight="15dp"
+    		android:paddingBottom="10dp"
+    		android:background="#ffffff"
+    		android:id="@+id/candidate_detail_votemessage"
+    		android:text="王大锤的扮演者罗洪明（白客），是万万没想到的猪脚，这是一个非常优秀的演员"/>
+
+	</LinearLayout>

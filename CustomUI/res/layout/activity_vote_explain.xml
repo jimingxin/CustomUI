@@ -1,0 +1,139 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#efeff4"
+    android:orientation="vertical"
+    tools:context="com.exam.customui.VoteExplainActivity" >
+
+        <include
+            android:id="@+id/headerView"
+            layout="@layout/navigation" />
+        
+        <TextView
+            android:id="@+id/vote_explain_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:text="华北院高级项目经理岗位评选\n投票说明"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="15dp"
+            android:text="投票说明:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vote_explain_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:text="这是投票描述我看看你到底能在什么几把地方换行"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="投票时间："
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vote_explain_createtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="开始时间：2016-9-21"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/vote_explain_deadtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingBottom="15dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="结束时间：2016-9-28"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="15dp"
+            android:text="投票票数:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/vote_explain_number"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="每人三票"
+            android:textColor="#000000" />
+        
+        
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <Button
+            android:id="@+id/vote_explain_button_green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#4bc17c"
+            android:text="开始投票"
+            android:textColor="@color/button_selector"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/vote_explain_button_blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#3A97FF"
+            android:text="投票已完成，点击查看"
+            android:textColor="@color/button_selector"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/vote_explain_button_gray"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="#A6A6A6"
+            android:clickable="false"
+            android:text="投票已结束"
+            android:textColor="#ffffff"
+            android:visibility="invisible" />
+        </RelativeLayout>
+
+</LinearLayout>

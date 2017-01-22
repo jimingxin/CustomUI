@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    android:orientation="vertical" 
+    tools:context="com.exam.fragment.MySetFragment" >
+    
+    <include
+            android:id="@+id/headerView"
+            layout="@layout/navigation" />
+  
+        <TextView
+            android:id="@+id/myset_usermessage"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:text="   个人信息"
+            android:textColor="#464646"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/myset_userquit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:text="退出系统"
+            android:textColor="#464646"
+            android:textSize="18sp" />
+    
+</LinearLayout>

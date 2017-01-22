@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="rb_color_pressed">#4bc17c</color>
+    <color name="rb_color_normal">#9e9e9e</color>
+    <color name="view_color_current">#ff6633</color>
+    <color name="view_color_pervious">#fedede</color>
+    <color name="view_color_blue">#3A97FF</color>
+    <color name="view_color_gray">#9e9e9e</color>
+    
+</resources>

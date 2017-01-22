@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp">
+   
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        android:id="@+id/hehehe">
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/item_vote_name"
+        android:text="华北地区"
+        android:textSize="15sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         android:layout_marginLeft="10dp"
+        android:id="@+id/item_vote_starttime"
+        android:text="开始时间：2016-9-21"
+        android:gravity="center_vertical"/>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+         android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:id="@+id/item_vote_endtime"
+        android:text="结束时间：2016-9-28"
+        android:gravity="center_vertical"/>
+    
+   </LinearLayout>
+  
+    <ImageView 
+       android:layout_width="45dp"
+       android:layout_height="45dp"
+       android:id="@+id/item_vote_imageview"
+       android:src="@drawable/myview"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:visibility="invisible"/>   
+       
+</RelativeLayout>

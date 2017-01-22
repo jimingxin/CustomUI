@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.exam.activity.VoteSelectActivity">
+     
+    <include
+        android:id="@+id/headerView"
+        layout="@layout/navigation" />
+      <LinearLayout 
+          android:layout_width="match_parent"
+          android:layout_height="45dp"
+          android:layout_below="@+id/headerView"
+          android:orientation="horizontal"
+          android:id="@+id/listview_header"
+          android:background="#efeff4">
+          <TextView 
+              android:id="@+id/judge_vote"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:text="评委：小明"
+              android:gravity="center"/>
+          <TextView 
+              android:id="@+id/already_vote_number"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:text="已投票数：3"
+              android:gravity="center"/>
+          <TextView 
+              android:id="@+id/rest_vote_number"
+              android:layout_width="0dp"
+              android:layout_weight="1"
+              android:layout_height="match_parent"
+              android:text="剩余票数：1"
+              android:gravity="center"/>
+      </LinearLayout>
+      
+      <com.exam.listview.XListView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/candidate_pullrefresh"
+        android:layout_below="@+id/listview_header"
+        android:layout_above="@+id/submit_vote"
+       ></com.exam.listview.XListView>
+     
+      <Button 
+          android:id="@+id/submit_vote"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:text="提交投票"
+          android:layout_alignParentBottom="true"
+          android:background="#4bc17c"
+          android:textSize="20sp"
+          android:textColor="@color/button_selector"
+          android:gravity="center"/>
+      
+
+</RelativeLayout>

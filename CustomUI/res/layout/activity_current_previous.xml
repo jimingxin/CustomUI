@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.exam.customui.CurrentPreviousActivity"
+    tools:ignore="MergeRootFrame" >
+    
+    <include
+        android:id="@+id/headerView"
+        layout="@layout/navigation" />
+    
+    <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="55dp"
+       android:background="#efeff4"
+       android:orientation="horizontal">
+       <TextView 
+           android:layout_width="0dp"
+           android:layout_height="55dp"
+           android:text="当前"
+           android:id="@+id/current_vote_list"
+           android:layout_weight="1"
+           android:gravity="center"/>
+       <TextView 
+           android:layout_width="0dp"
+           android:layout_height="55dp"
+           android:text="往期"
+           android:id="@+id/previous_vote_list"
+           android:layout_weight="1"
+           android:gravity="center"/>
+   </LinearLayout>
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_vote_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+     
+
+</LinearLayout>

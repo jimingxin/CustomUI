@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+
+   <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#9e9e9e"/>
+
+    <RadioGroup
+        android:id="@+id/rg_main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_main_firstPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:text="首页"
+            android:textColor="@color/rb_textcolor_selector"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:drawableTop="@drawable/firstpage_selector"
+            android:paddingTop="1dp" />
+
+        <RadioButton
+            android:id="@+id/rb_main_MySet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/userset_selector"
+            android:gravity="center"
+            android:paddingTop="1dp"
+            android:text="个人中心"
+            android:textSize="13sp"
+            android:textColor="@color/rb_textcolor_selector" />
+        
+
+    </RadioGroup> 
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:id="@+id/loginbackground1"
+    android:background="@drawable/back2"
+    tools:context="com.exam.customui.LoginActivity" >
+    
+    
+    <FrameLayout
+        android:id="@+id/loginuserlayout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="155dp"
+        android:background="@drawable/login_shape" 
+        >
+       
+        <EditText 
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loginuserEdit"
+            android:background="@null"
+            />
+    </FrameLayout>
+    
+    
+    <FrameLayout
+        android:id="@+id/loginpasswardlayout"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/login_shape"
+        >
+        <EditText 
+			android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/loginpasswardEdit"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:layout_marginLeft="5dp"
+            />
+        
+    </FrameLayout>
+    
+      <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="270dp"
+        android:background="@drawable/login_bt_shape"
+        android:text="登录"
+        android:onClick="loginIn"
+        android:textColor="@color/button_selector"/>"
+
+</RelativeLayout>
